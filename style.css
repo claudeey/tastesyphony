@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: #444;
+    color: white;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Home Page Styles */
+.home-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.welcome-text {
+    max-width: 50%;
+    text-align: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #444;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-main {
+        flex-direction: column;
+    }
+
+    .welcome-text, .home-image {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Forms */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, button, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+/* Menu */
+.menu-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.menu-section h1 {
+    font-size: 35px;
+    text-decoration: underline;
+
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #444;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-contact h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+footer input, footer textarea, footer button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+footer input, footer textarea {
+    border: 1px solid #ccc;
+}
+
+footer button {
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #e5533c;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 1rem;
+    }
+
+    footer input, footer textarea {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Center-align headings in the order page */
+.order-form h1, .order-form h2 {
+    text-align: center;
+}
+
+.order-form h1{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #ff6347; /* Tomato background color */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo .icon {
+    margin-right: 0.5rem;
+}
+
+/* Hover Effect for Logo */
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navigation Links Hover Effect */
+.nav-links li a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    color: white;
+    background-color: #ff6347; /* Match logo background */
+}
+
+/* General Hover Effects for Buttons */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Contact Form Hover */
+footer form button:hover {
+    background-color: #e5533c;
+    transform: scale(1.05);
+}
+
+.food-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.menu-item img {
+    height: 150px;
+    width: 150;
+}
+
+/* Container styles for centering the content */
+.welcome-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    gap: 20px; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the text section */
+.welcome-text {
+    flex: 1; /* Adjust width dynamically */
+    max-width: 50%; /* Limits the text width */
+    text-align: left; /* Align text to the left */
+    padding: 10px;
+}
+
+/* Styling for the image section */
+.home-image {
+    flex: 1; /* Adjust width dynamically */
+    max-width: 50%; /* Limits the image width */
+    text-align: right; /* Align image to the right */
+    padding: 10px;
+}
+
+.home-image img {
+    width: 100%; /* Responsive image */
+    max-width: 400px; /* Limits image size */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column; /* Stacks text and image vertically */
+    }
+
+    .welcome-text, .home-image {
+        max-width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align on small screens */
+    }
+}
+
+
+.welcome-text h1 {
+    font-size: 3rem; /* Adjust this value as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-style: italic; /* Makes the text italic */
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+
+.booking-form h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about h1, h2{
+    text-align: center;
+}
+
+.about {
+    text-align:center;
+}
